@@ -1,13 +1,10 @@
-# Routing в React приложениях
+# Routing & Testing in React App
 
-Приложение для демонстрации.
-Состоит из нескольких страницЖ главная, список пользователей, информация о кокретном пользователей.
-
-В качестве сборщика используется [vite](https://vitejs.dev/)
+Its a small React App with utilizing Routing & Testing abilities
 
 <hr />
 
-### Запуска режима разработки
+### Start project
 
 ```sh
 npm run dev
