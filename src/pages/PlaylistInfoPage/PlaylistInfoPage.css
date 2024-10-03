@@ -1,0 +1,56 @@
+.playlistInfoPage {
+  color: darkcyan;
+}
+
+.playlistHeaderLink {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.playlistHeaderLink a {
+  position: relative;
+  font-size: large;
+  font-weight: 600;
+  width: fit-content;
+  color: rgb(3, 246, 246);
+  transition: all 0.2s ease;
+}
+
+.playlistHeaderLink a::before {
+  content: "\27F5";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: currentColor;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.playlistInfoPage a:hover {
+  padding-left: 24px;
+}
+
+.playlistInfoPage a:hover::before {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.playlistInfoPage ul {
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgb(3, 246, 246);
+}
+
+.playlistHeader {
+  border-bottom: 2px solid rgb(3, 246, 246);
+}
+
+.playlistHeader span {
+  color: rgb(3, 246, 246);
+  font-size: large;
+  font-weight: 600;
+}
